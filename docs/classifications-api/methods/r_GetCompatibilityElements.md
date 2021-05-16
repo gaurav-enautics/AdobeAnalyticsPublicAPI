@@ -4,9 +4,9 @@ Returns the available `elements` for a given report suite, and compatibility acr
 
 ## Classifications.GetCompatibilityElements Parameters
 
-|Parameter|Type|Description|
-|---------|----|-----------|
-| **rsid\_list** | `array(xsd:string)` | A list of report suites where you want to get valid element values. |
+|Parameter|Type|Client Specified|Description|
+|---------|----|----------------|-----------|
+| **rsid\_list** | `array(xsd:string)` | YES | A list of report suites where you want to get valid element values. |
 
 ## Classifications.GetCompatibilityElements Response
 
