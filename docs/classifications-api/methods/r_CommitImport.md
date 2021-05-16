@@ -4,9 +4,9 @@ Submits a classifications import file for processing.
 
 ## Classifications.CommitImport Parameters
 
-|Parameter|Type|Description|
-|---------|----|-----------|
-|**job\_id** |`xsd:int` | The job ID to commit for processing.|
+|Parameter|Type|Client Specified|Description|
+|---------|----|-------------|-----------|
+|**job\_id** |`xsd:int` |Should be the same as one created when job was created | The job ID to commit for processing.|
 
 ## Classifications.CommitImport Response
 
