@@ -4,12 +4,12 @@ Similar to the Template tab in the Classifications tool in the Admin Console UI,
 
 ## Classifications.GetTemplate Parameters
 
-|Name|Type|Description|
-|----|----|-----------|
-| **rsid\_list** | `xsd:string` | The report suite where you want to import data. |
-| **element** | `xsd:string` |  `relation_id` for which you want to get a template \(e.g. 101=evar1, 51=product, etc\) |
-| **classification\_names** | `xsd:string_array` | \(optional\) an array of text classification names to include as columns in the template. |
-| **encoding** | `xsd:string` | The encoding to use for the template |
+|Name|Type|Client Specified|Description|
+|----|----|----------------|-----------|
+| **rsid\_list** | `xsd:string` | YES | The report suite where you want to import data. |
+| **element** | `xsd:string` | YES  | `relation_id` for which you want to get a template \(e.g. 101=evar1, 51=product, etc\) |
+| **classification\_names** | `xsd:string_array` | NO |\(optional\) an array of text classification names to include as columns in the template. |
+| **encoding** | `xsd:string` | To be updated | The encoding to use for the template |
 
 ## Classifications.GetTemplate Response
 
