@@ -8,11 +8,11 @@ You can separate data into pages, but the pages must be sent sequentially \(eith
 
 **Note:** Individual classifications jobs cannot exceed 25,000 rows.
 
-|Parameter|Type|Description|
-|---------|----|-----------|
-|**job\_id** |`xsd:int` | The import job ID where you want to append the row data. |
-|**page** |`xsd:int` | A page number that identifies the page's sequential position in the import job. For example, if you submit a spreadsheet with 1000 values, divided into 4 pages, page 1 includes values 1 - 250, page 2 includes values 251 - 500, and so on. |
-|**rows** |[rows](../data_types/r_rows.md#) | An array of row data that matches the column heading order of the specified import job. |
+|Parameter|Type|Client Specified|Description|
+|---------|----|-------------|-----------|
+|**job\_id** |`xsd:int` | Get it from the Import API endpoint |The import job ID where you want to append the row data. |
+|**page** |`xsd:int` | If the data is too large , split into pages | A page number that identifies the page's sequential position in the import job. For example, if you submit a spreadsheet with 1000 values, divided into 4 pages, page 1 includes values 1 - 250, page 2 includes values 251 - 500, and so on. |
+|**rows** |[rows](../data_types/r_rows.md#) | specify data values in the same order as "headers" were specified | An array of row data that matches the column heading order of the specified import job. |
 
 ## Classifications.PopulateImport Response
 
