@@ -5,7 +5,7 @@ Creates a classifications Import FTP account.
 ## Classifications.CreateFTP Parameters
 
 |Name|Type|Get from Client|Description|
-|----|----|---------------------|-----------|
+|----|----|------------------------------|-----------|
 | **element** | `xsd:int` | YES | `relation_id` that you want to import or export \(e.g. 101=evar1, 51=product, etc\) |
 | **rsid\_list** | `tns:string_array` | YES | report suites to which data is imported. |
 | **description** | `xsd:string` | YES | a textual description for the FTP account. |
