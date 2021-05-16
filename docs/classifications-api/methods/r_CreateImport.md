@@ -10,16 +10,16 @@ After submitting the job, you can iteratively populate row data by calling [Popu
 
 After sending all data, call [CommitImport](r_CommitImport.md#) to finalize the Import job and submit it to the processing queue.
 
-|Parameter|Type|Description|
-|---------|----|-----------|
-| **rsid\_list** | `array(xsd:string)` | The list of report suites to receive the import job. |
-| **element** | `xsd:string` |The report for which you want to perform a classifications import.|
-| **check\_divisions** | `xsd:int` | Specifies whether to check report suites for compatible divisions. Supported values include: `0`: Do not check report suite compatibility. `1`: \(Default\) Check report suite compatibility. |
-| **description** | `xsd:string` | A description of the import job. |
-| **email\_address** | `xsd:string` | The email address to receive job notifications. |
-| **export\_results** | `xsd:int` | Specifies whether to automatically perform an export when the import job finishes processing. Supported values include: `0`: \(Default\) Do not export. `1`: Export when the job completes. |
-| **header** | `array(xsd:string)` | An array of column values for classification. First column is required to be the `key`.|
-| **overwrite\_conflicts** | `xsd:int` | Specifies whether to overwrite data when conflicts occur. Supported values include: `0`: \(Default\) Do not overwrite data on a conflict. `1`: Overwrite data on a conflict. |
+|Parameter|Type|Client specified|Description|
+|---------|----|------------------|-----------|
+| **rsid\_list** | `array(xsd:string)` | YES | The list of report suites to receive the import job. |
+| **element** | `xsd:string` | YES | The report for which you want to perform a classifications import(relation_id).|
+| **check\_divisions** | `xsd:int` | NO(Specify as 1) | Specifies whether to check report suites for compatible divisions. Supported values include: `0`: Do not check report suite compatibility. `1`: \(Default\) Check report suite compatibility. |
+| **description** | `xsd:string` | Specify good description to indicate job | A description of the import job. |
+| **email\_address** | `xsd:string` | YES | The email address to receive job notifications. |
+| **export\_results** | `xsd:int` | Specify as 1 | Specifies whether to automatically perform an export when the import job finishes processing. Supported values include: `0`: \(Default\) Do not export. `1`: Export when the job completes. |
+| **header** | `array(xsd:string)` | YES | An array of column values for classification. First column is required to be the `key`.|
+| **overwrite\_conflicts** | `xsd:int` | Specify as 1 | Specifies whether to overwrite data when conflicts occur. Supported values include: `0`: \(Default\) Do not overwrite data on a conflict. `1`: Overwrite data on a conflict. |
 
 ## Classifications.CreateImport Response
 
