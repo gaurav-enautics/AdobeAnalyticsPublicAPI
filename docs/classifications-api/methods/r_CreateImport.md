@@ -1,6 +1,6 @@
 # CreateImport
 
-Creates a classifications import job.
+Creates a classifications import job. This is an optional step to have a template for the first time but repetitive use is not advise unless there has beeen a change to the template.
 
 ## Classifications.CreateImport Parameters
 
