@@ -14,7 +14,7 @@ After sending all data, call [CommitImport](r_CommitImport.md#) to finalize the 
 |---------|----|------------------|-----------|
 | **rsid\_list** | `array(xsd:string)` | YES | The list of report suites to receive the import job. |
 | **element** | `xsd:string` | YES | The report for which you want to perform a classifications import(relation_id).|
-| **check\_divisions** | `xsd:int` | Specify as 1 | Specifies whether to check report suites for compatible divisions. Supported values include: `0`: Do not check report suite compatibility. `1`: \(Default\) Check report suite compatibility. |
+| **check\_divisions** | `xsd:int` | Specify as 1 | Specifies whether to check report suites for compatible divisions. Supported values include: `0`: Do not check report suite compatibility. `1`: \(Default\) Check report suite compatibility. Not to be used only one job in rsid list. It is recommended we create seperate jobs for each report suite. |
 | **description** | `xsd:string` | Specify good description to indicate job | A description of the import job. |
 | **email\_address** | `xsd:string` | YES | The email address to receive job notifications. |
 | **export\_results** | `xsd:int` | Specify as 1 | Specifies whether to automatically perform an export when the import job finishes processing. Supported values include: `0`: \(Default\) Do not export. `1`: Export when the job completes. |
